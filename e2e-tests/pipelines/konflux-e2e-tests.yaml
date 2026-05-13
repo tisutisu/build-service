@@ -96,11 +96,11 @@ spec:
         resolver: git
         params:
           - name: url
-            value: https://github.com/konflux-ci/tekton-integration-catalog
+            value: https://github.com/tisutisu/tekton-integration-catalog
           - name: revision
-            value: main
+            value: operator-based-deployment
           - name: pathInRepo
-            value: tasks/konflux-ci/deploy/0.3/deploy-konflux-ci.yaml
+            value: tasks/konflux-ci/deploy/0.4/deploy-konflux-ci.yaml
       params:
         - name: cluster-access-secret
           value: kfg-$(context.pipelineRun.name)
